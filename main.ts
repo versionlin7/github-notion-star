@@ -28,7 +28,6 @@ async function partialSync() {
 const ENVS = ['NOTION_API_KEY', 'NOTION_DATABASE_ID', 'TOKEN_OF_GITHUB'];
 
 ENVS.forEach((env) => {
-    console.log(process.env)
     assert(process.env[env], `${env} must be added`);
 });
 
