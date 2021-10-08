@@ -65,8 +65,6 @@ export class Notion {
 
     addPages(pages: NotionPage[]) {
         pages.forEach((page) => {
-            console.log(page)
-            console.log(this.pages)
             this.pages[page.properties.Name.title[0].plain_text] = {
                 id: page.id,
             };
